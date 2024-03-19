@@ -1,0 +1,15 @@
+version: '1.0'
+ 
+services:
+  fastmot:
+    image: maltgroup/fastmot
+  tracks_processing:
+    image: maltgroup/tracks_processing
+  vid_online_clustering:
+    image: maltgroup/vid_online_clustering
+  vid_statistics:
+    image: maltgroup/vid_statistics
+  webinterface:
+    image: maltgroup/webinterface
+    ports:
+      - "9101:9101"
